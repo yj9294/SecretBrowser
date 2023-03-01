@@ -21,11 +21,16 @@ class HomeVC: UIViewController {
     @IBOutlet weak var tabButton: UIButton!
     @IBOutlet weak var contentVie: UIView!
     
+    @IBOutlet weak var adView: GADNativeView!
+    
+    var viewWillAppear = false
+    
     var startLoadDate: Date? = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initNavgationBar()
+        addGADObserver()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             ATTrackingManager.requestTrackingAuthorization { _ in
             }
@@ -42,13 +47,18 @@ class HomeVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        viewWillAppear = true
         BrowserUtil.shared.addedWebView(from: view)
         refreshStatus()
         FirebaseUtil.log(event: .homeShow)
+        GADUtil.share.load(.interstitial)
+        GADUtil.share.load(.native)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        viewWillAppear = false
         BrowserUtil.shared.removeWebView()
+        GADUtil.share.close(.native)
     }
     
 }
@@ -117,6 +127,23 @@ extension HomeVC {
         self.view.addSubview(view)
         view.backHandle = {
             self.refreshStatus()
+        }
+    }
+    
+    
+    func addGADObserver() {
+        NotificationCenter.default.addObserver(forName: .nativeUpdate, object: nil, queue: .main) { [weak self] noti in
+            guard let self = self else { return }
+            if let ad = noti.object as? NativeADModel, self.viewWillAppear == true {
+                if Date().timeIntervalSince1970 - (GADUtil.share.homeNativeAdImpressionDate ?? Date(timeIntervalSinceNow: -11)).timeIntervalSince1970 > 10 {
+                    self.adView.nativeAd = ad.nativeAd
+                    GADUtil.share.homeNativeAdImpressionDate = Date()
+                } else {
+                    NSLog("[ad] 10s home 原生广告刷新或数据填充间隔.")
+                }
+            } else {
+                self.adView.nativeAd = nil
+            }
         }
     }
     

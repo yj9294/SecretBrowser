@@ -21,6 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let vc = HomeVC.loadStoryBoard()
         return UINavigationController(rootViewController: vc)
     }()
+    
+    var isLaunch: Bool {
+        return window?.rootViewController == launchVC
+    }
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
@@ -34,6 +38,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 )
         }
         FirebaseApp.configure()
+        GADUtil.share.requestRemoteConfig()
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -42,6 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             FirebaseUtil.log(event: .openHot)
         }
         AppUtil.shared.appEnterbackground = false
+        GADUtil.share.requestRemoteConfig()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

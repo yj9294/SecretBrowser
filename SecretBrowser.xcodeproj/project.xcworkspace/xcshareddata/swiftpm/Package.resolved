@@ -55,6 +55,24 @@
       }
     },
     {
+      "identity" : "googlemobileads",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quanghits/GoogleMobileAds",
+      "state" : {
+        "revision" : "271e6d6bc1d7756a88fe82df558145a264a34331",
+        "version" : "9.8.0"
+      }
+    },
+    {
+      "identity" : "googleusermessagingplatform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/quanghits/GoogleUserMessagingPlatform.git",
+      "state" : {
+        "revision" : "f322d91b6b0497b727b228a5fa5b9394e7886d3a",
+        "version" : "2.0.0"
+      }
+    },
+    {
       "identity" : "googleutilities",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
