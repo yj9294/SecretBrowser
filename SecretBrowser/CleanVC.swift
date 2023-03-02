@@ -17,6 +17,7 @@ class CleanVC: UIViewController {
         super.viewDidLoad()
         starAnimation()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            BrowserUtil.shared.clean(from: self)
             self.dismiss(animated: true) { [weak self] in
                 self?.backHandle?()
             }

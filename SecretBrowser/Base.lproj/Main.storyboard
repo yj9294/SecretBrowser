@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +13,7 @@
         <!--LaunchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchVC" id="BYZ-38-t0r" customClass="LaunchVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +54,7 @@
         <!--HomeVC-->
         <scene sceneID="RHe-Bq-Uea">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="IE8-Gd-vfv" customClass="HomeVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="IE8-Gd-vfv" customClass="HomeVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eov-Nr-aHv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +63,7 @@
                                 <rect key="frame" x="28" y="84" width="337" height="48"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seaech or enter address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSp-Ue-LCv">
-                                        <rect key="frame" x="16" y="14" width="221" height="20"/>
+                                        <rect key="frame" x="16" y="14" width="271" height="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -95,7 +96,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VBw-2V-gUO" firstAttribute="bottom" secondItem="p2y-ni-g3p" secondAttribute="bottom" id="0y9-Dn-ED0"/>
-                                    <constraint firstAttribute="trailing" secondItem="aSp-Ue-LCv" secondAttribute="trailing" constant="100" id="5CI-7W-SkH"/>
+                                    <constraint firstAttribute="trailing" secondItem="aSp-Ue-LCv" secondAttribute="trailing" constant="50" id="5CI-7W-SkH"/>
                                     <constraint firstItem="VBw-2V-gUO" firstAttribute="trailing" secondItem="p2y-ni-g3p" secondAttribute="trailing" id="7Mz-hA-qeF"/>
                                     <constraint firstAttribute="bottom" secondItem="aSp-Ue-LCv" secondAttribute="bottom" constant="14" id="E7I-an-5f8"/>
                                     <constraint firstItem="aSp-Ue-LCv" firstAttribute="top" secondItem="rB1-jg-qul" secondAttribute="top" constant="14" id="EnK-cs-ynA"/>
@@ -504,7 +505,7 @@
         <!--TabVC-->
         <scene sceneID="bDd-N6-fXp">
             <objects>
-                <viewController storyboardIdentifier="TabVC" id="f3o-CT-xD8" customClass="TabVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabVC" id="f3o-CT-xD8" customClass="TabVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U43-kK-gY7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -520,7 +521,7 @@
                                     <inset key="sectionInset" minX="16" minY="30" maxX="16" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabCell" id="ve2-fd-88D" customClass="TabCell" customModule="ScretBrowser" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabCell" id="ve2-fd-88D" customClass="TabCell" customModule="SecretBrowser" customModuleProvider="target">
                                         <rect key="frame" x="16" y="30" width="138" height="201"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="K2m-5q-Zug">
@@ -633,7 +634,7 @@
         <!--PrivacyVC-->
         <scene sceneID="XQb-Vf-9hf">
             <objects>
-                <viewController storyboardIdentifier="PrivacyVC" id="a8n-ud-B16" userLabel="PrivacyVC" customClass="PrivacyVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PrivacyVC" id="a8n-ud-B16" userLabel="PrivacyVC" customClass="PrivacyVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k5E-ov-7B2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -694,7 +695,7 @@
         <!--TermsVC-->
         <scene sceneID="Fzl-Bs-Mlx">
             <objects>
-                <viewController storyboardIdentifier="TermsVC" id="qbm-16-TlX" userLabel="TermsVC" customClass="TermsVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsVC" id="qbm-16-TlX" userLabel="TermsVC" customClass="TermsVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z4A-US-HMP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -755,7 +756,7 @@
         <!--CleanVC-->
         <scene sceneID="6Wd-hE-KX8">
             <objects>
-                <viewController storyboardIdentifier="CleanVC" id="NLF-2u-R3T" customClass="CleanVC" customModule="ScretBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CleanVC" id="NLF-2u-R3T" customClass="CleanVC" customModule="SecretBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MMy-Kt-thx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
