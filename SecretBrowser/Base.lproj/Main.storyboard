@@ -63,7 +63,7 @@
                                 <rect key="frame" x="28" y="84" width="337" height="48"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seaech or enter address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSp-Ue-LCv">
-                                        <rect key="frame" x="16" y="14" width="221" height="20"/>
+                                        <rect key="frame" x="16" y="14" width="271" height="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -96,7 +96,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="VBw-2V-gUO" firstAttribute="bottom" secondItem="p2y-ni-g3p" secondAttribute="bottom" id="0y9-Dn-ED0"/>
-                                    <constraint firstAttribute="trailing" secondItem="aSp-Ue-LCv" secondAttribute="trailing" constant="100" id="5CI-7W-SkH"/>
+                                    <constraint firstAttribute="trailing" secondItem="aSp-Ue-LCv" secondAttribute="trailing" constant="50" id="5CI-7W-SkH"/>
                                     <constraint firstItem="VBw-2V-gUO" firstAttribute="trailing" secondItem="p2y-ni-g3p" secondAttribute="trailing" id="7Mz-hA-qeF"/>
                                     <constraint firstAttribute="bottom" secondItem="aSp-Ue-LCv" secondAttribute="bottom" constant="14" id="E7I-an-5f8"/>
                                     <constraint firstItem="aSp-Ue-LCv" firstAttribute="top" secondItem="rB1-jg-qul" secondAttribute="top" constant="14" id="EnK-cs-ynA"/>

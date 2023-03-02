@@ -107,7 +107,6 @@ extension HomeVC {
             self.present(vc, animated: true)
             vc.backHandle = {
                 FirebaseUtil.log(event: .cleanSuccess)
-                BrowserUtil.shared.clean(from: self)
                 self.alert("Cleaned Successfully.")
                 FirebaseUtil.log(event: .cleanAlert)
             }
@@ -177,6 +176,8 @@ extension HomeVC {
                 FirebaseUtil.log(event: .webSuccess, params: ["lig": "\(ceil(time))"])
             }
             startLoadDate = nil
+            stopButton.isHidden = true
+            searchButton.isHidden = false
         }
     }
     

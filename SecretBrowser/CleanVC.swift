@@ -54,6 +54,7 @@ class CleanVC: UIViewController {
                 return
             }
             GADUtil.share.show(.interstitial, from: self) { _ in
+                BrowserUtil.shared.clean(from: self)
                 self.perform(#selector(self.backAction), with: nil, afterDelay: 0.2)
             }
         }
