@@ -1,5 +1,5 @@
 {
-        "showTimes": 300,
+        "showTimes": 30,
         "clickTimes": 5,
         "ads": [{
             "key": "interstitial",

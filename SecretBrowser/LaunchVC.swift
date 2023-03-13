@@ -57,14 +57,19 @@ extension LaunchVC {
         if progress >= 1.0 {
             progressTimer?.invalidate()
             progressTimer = nil
-            GADUtil.share.show(.interstitial) { _ in
-                AppUtil.shared.delegate?.launched()
-                GADUtil.share.load(.interstitial)
-                GADUtil.share.load(.native)
+            GADUtil.share.show(.interstitial) { [weak self] _ in
+                guard let self = self  else { return }
+                if self.progress > 1.0 {
+                    AppUtil.shared.delegate?.launched()
+                    GADUtil.share.load(.interstitial)
+                    GADUtil.share.load(.native)
+                }
+                
             }
         }
         
         if showAD, GADUtil.share.isLoaded(.interstitial) {
+            showAD = false
             duration = 0.2
         }
     }

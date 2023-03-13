@@ -42,9 +42,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
+
         if AppUtil.shared.appEnterbackground == true {
             launching()
             FirebaseUtil.log(event: .openHot)
+        }
+        if let vc = window?.rootViewController?.presentedViewController {
+            vc.dismiss(animated: true)
         }
         AppUtil.shared.appEnterbackground = false
         GADUtil.share.requestRemoteConfig()
