@@ -838,7 +838,28 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOf-af-OCQ">
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">What information will we collect
+Crash logs, diagnostic data, and other diagnostic data.
+Contact email, the content of the email you sent.
+Device ID
+How will we use this information
+Bankruptcy and reorganization of enterprises, merger and transfer of businesses, etc.
+Learn how to use our application. Learn about the number of downloads, the number of active people per day and other analysis data.
+Develop and provide new product functions.
+Provide personalized advertising services
+Disclosure of information about
+Bankruptcy and reorganization of enterprises, merger and transfer of businesses, etc.
+Obligations prescribed by law.
+And service providers; And business partners.
+Google Play Services, AdMob, Google Analytics for Firebase, Firebase Crashlytics, Facebook.
+Children's Privacy
+Our service is not for people under 17 years old. We will not intentionally collect personal identity information from people under the age of 17. If we find that we have collected personal data of our children without the consent of our parents, we will take measures to delete these information from our server.
+
+Update 
+We may update our privacy policy.
+Contact us
+If you have any questions about this Privacy Policy, please contact us  :
+Mc2468228@outlook.com</mutableString>
                                 <color key="textColor" red="0.51764705882352935" green="0.52941176470588236" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -899,7 +920,14 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8Z-EA-4JY">
                                 <rect key="frame" x="16" y="119" width="361" height="683"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">Use of the application
+Do not use this application for illegal purposes
+Downloading and using our application means that you accept the provisions of this privacy policy
+Update
+We may update our Terms of Use.
+Contact us
+If you have any questions about these Terms of Use, please contact us :
+Mc2468228@outlook.com</string>
                                 <color key="textColor" red="0.51764705879999995" green="0.52941176469999995" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
